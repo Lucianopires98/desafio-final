@@ -2,6 +2,11 @@ import styled from "styled-components";
 import { ArrowLeftCircleFill } from "@styled-icons/bootstrap/ArrowLeftCircleFill";
 import { Link } from "react-router-dom";
 
+export const Container = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+`;
+
 export const Image = styled.img`
   width: 100%;
 `;

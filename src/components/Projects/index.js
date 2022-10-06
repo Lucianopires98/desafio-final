@@ -9,7 +9,7 @@ import * as S from "./style";
 
 const Projects = () => {
   return (
-    <div>
+    <S.Container>
       <S.ContainerHeader>
         <S.NavBarLink to="/">
           <S.ArrowIcon />
@@ -74,7 +74,7 @@ const Projects = () => {
           </S.BoxImage>
         </a>
       </S.ContainerImage>
-    </div>
+    </S.Container>
   );
 };
 

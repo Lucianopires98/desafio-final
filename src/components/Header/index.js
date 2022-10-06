@@ -3,7 +3,7 @@ import * as S from "./style";
 
 const Header = () => {
   return (
-    <>
+    <S.Container>
       <S.Menu>
         <S.List>
           <S.NavBarLink to="/projects">Projetos</S.NavBarLink>
@@ -11,7 +11,7 @@ const Header = () => {
           <S.ThemeIcon />
         </S.List>
       </S.Menu>
-    </>
+    </S.Container>
   );
 };
 

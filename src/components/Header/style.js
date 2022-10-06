@@ -2,6 +2,11 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { DarkTheme } from "@styled-icons/fluentui-system-regular/DarkTheme";
 
+export const Container = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+`;
+
 export const Menu = styled.div`
   display: flex;
   justify-content: center;

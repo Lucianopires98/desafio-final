@@ -7,6 +7,8 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
   width: 100%;
   padding-top: 2rem;
 `;
