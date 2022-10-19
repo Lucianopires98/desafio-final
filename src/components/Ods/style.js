@@ -55,14 +55,72 @@ export const Image = styled.img`
   }
 `;
 
-export const Card = styled.div`
-  background-image: url(${(props) => props.id});
+export const BoxMap = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const BoxModal = styled.div`
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  z-index: 1;
+`;
+
+export const BgModal = styled.div`
+  position: absolute;
+  width: 80%;
+  height: 80vh;
   background-color: ${(props) => props.bgColor};
-  background-repeat: no-repeat;
-  background-size: auto 80%;
-  background-position: 90%;
-  border: 1px solid red;
-  width: calc(100%-8rem);
-  height: 40vh;
-  margin: 4rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: scroll;
+`;
+
+export const CloseModal = styled.span`
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 1rem;
+  cursor: pointer;
+`;
+
+export const BoxTextModal = styled.div`
+  color: #fff;
+  width: 400px;
+
+  span {
+    font-size: 30px;
+  }
+`;
+
+export const IconOds = styled.img`
+  width: 150px;
+`;
+
+export const Card = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 75vh;
+`;
+
+export const BlockParagraph = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  color: #fff;
+`;
+
+export const ParagraphObjective = styled.p`
+  width: 60vw;
 `;

@@ -1,7 +1,7 @@
 import SobreImg from "../../images/sobre.png";
 import * as S from "./style";
 
-const Sobre = () => {
+const About = () => {
   return (
     <S.Container>
       <S.Box>
@@ -35,4 +35,4 @@ const Sobre = () => {
   );
 };
 
-export default Sobre;
+export default About;
