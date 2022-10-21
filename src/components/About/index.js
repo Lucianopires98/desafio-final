@@ -17,14 +17,14 @@ const About = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <S.GithubIcon />
+            <S.GithubIcon color={"#6b8096"} />
           </a>
           <a
             href="https://www.linkedin.com/in/lucianopires98/"
             target="_blank"
             rel="noreferrer"
           >
-            <S.LinkedinIcon />
+            <S.LinkedinIcon color={"#6b8096"} />
           </a>
         </div>
       </S.Box>

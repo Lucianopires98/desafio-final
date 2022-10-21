@@ -20,9 +20,6 @@ const Ods = () => {
       <S.Container>
         <S.BoxText>
           <S.BoxTitle>
-            <S.NavBarLink to="/">
-              <S.ArrowIcon />
-            </S.NavBarLink>
             <h1>Os Objetivos de Desenvolvimento Sustentável no Brasil</h1>
           </S.BoxTitle>
           <p>

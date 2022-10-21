@@ -1,16 +1,8 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-import { ArrowLeftCircleFill } from "@styled-icons/bootstrap/ArrowLeftCircleFill";
 
 export const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
-`;
-
-export const ArrowIcon = styled(ArrowLeftCircleFill)`
-  width: 25px;
-  cursor: pointer;
-  padding-left: 1rem;
 `;
 
 export const BoxText = styled.div`
@@ -23,19 +15,6 @@ export const BoxTitle = styled.div`
 
   h1 {
     margin-left: 2rem;
-  }
-`;
-
-export const NavBarLink = styled(Link)`
-  cursor: pointer;
-  transition: 0.5s;
-  text-decoration: none;
-  display: flex;
-  cursor: pointer;
-  transition: 0.5s;
-
-  &:hover {
-    transform: scale(1.1);
   }
 `;
 

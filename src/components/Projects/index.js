@@ -11,9 +11,6 @@ const Projects = () => {
   return (
     <S.Container>
       <S.ContainerHeader>
-        <S.NavBarLink to="/">
-          <S.ArrowIcon />
-        </S.NavBarLink>
         <S.Header>
           <h1>Meus Projetos</h1>
         </S.Header>

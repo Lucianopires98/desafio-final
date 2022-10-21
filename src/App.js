@@ -1,17 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
-import Home from "./components/Home";
+import About from "./components/About";
+import Header from "./components/Header";
 import Projects from "./components/Projects";
 import Ods from "./components/Ods";
 
+import { ThemeProvider } from "styled-components";
+import { GlobalStyles } from "./components/globalstyles";
+import { lightTheme, darkTheme } from "./components/theme";
+import * as S from "./components/Header/style.js";
+
 function App() {
+  const [theme, setTheme] = useState("light");
+
+  const themeToggler = () => {
+    theme === "light" ? setTheme("dark") : setTheme("light");
+  };
+
   return (
-    <Routes>
-      <Route path="/ods" element={<Ods />} />
-      <Route path="/projects" element={<Projects />} />
-      <Route path="/" element={<Home />} />
-    </Routes>
+    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+      <>
+        <GlobalStyles />
+        <S.ThemeIcon onClick={themeToggler} />
+        <Header />
+        <Routes>
+          <Route path="/ods" element={<Ods />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/" element={<About />} />
+        </Routes>
+      </>
+    </ThemeProvider>
   );
 }
 
