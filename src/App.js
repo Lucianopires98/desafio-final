@@ -22,7 +22,15 @@ function App() {
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <>
         <GlobalStyles />
-        <S.ThemeIcon onClick={themeToggler} />
+        {theme === "dark" ? (
+          <div onClick={themeToggler}>
+            <S.ThemeIconSun />
+          </div>
+        ) : (
+          <div onClick={themeToggler}>
+            <S.ThemeIconMoon colorText={"#6b8096"} />
+          </div>
+        )}
         <Header />
         <Routes>
           <Route path="/ods" element={<Ods />} />

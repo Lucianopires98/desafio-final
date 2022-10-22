@@ -41,7 +41,7 @@ const Ods = () => {
               onClick={() => selectedItem(item)}
             />
             {selected === item.id && (
-              <S.BoxModal>
+              <S.BoxModal onClick={closeModal}>
                 <S.BgModal bgColor={item.color}>
                   <S.CloseModal onClick={closeModal}>X</S.CloseModal>
                   <S.Card>

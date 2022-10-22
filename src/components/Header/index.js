@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <S.Container>
       <S.NavBarLink to="/">
-        <S.ArrowIcon color={"#6b8096"} />
+        <S.HomeIcon color={"#6b8096"} />
       </S.NavBarLink>
       <S.BlockLink>
         <S.Menu>

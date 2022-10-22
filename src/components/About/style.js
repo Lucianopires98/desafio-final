@@ -4,6 +4,7 @@ import { LinkedinWithCircle } from "@styled-icons/entypo-social/LinkedinWithCirc
 
 export const Container = styled.div`
   display: flex;
+  flex-wrap: wrap-reverse;
   justify-content: center;
   align-items: center;
   max-width: 1200px;
@@ -14,6 +15,10 @@ export const Container = styled.div`
 
 export const Box = styled.div`
   width: 40%;
+
+  @media (max-width: 550px) {
+    width: 100%;
+  }
 `;
 
 export const Paragraph = styled.p`

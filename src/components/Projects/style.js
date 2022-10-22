@@ -17,7 +17,7 @@ export const ContainerImage = styled.div`
 `;
 
 export const BoxImage = styled.div`
-  width: 300px;
+  width: 280px;
   margin: 2rem 1rem;
   -webkit-box-shadow: 12px 12px 11px 0px #545454;
   box-shadow: 12px 12px 11px 0px #545454;

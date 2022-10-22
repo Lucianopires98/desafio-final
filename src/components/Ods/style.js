@@ -39,6 +39,8 @@ export const BoxMap = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 `;
 
 export const BoxModal = styled.div`
